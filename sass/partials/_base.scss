@@ -1,0 +1,33 @@
+@import "compass";
+@import "compass/reset";
+
+
+ // @import "animate.sass";
+
+@import "spr/*.png";
+
+$spr-layout: smart;
+
+@mixin wh() {
+    width:100%; 
+    float: left;
+}
+
+
+
+@font-face {
+    font-family: 'bank_gothicregular';
+    src: url('fonts/bank_gothic_medium.eot');
+    src: url('fonts/bank_gothic_medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bank_gothic_medium.woff2') format('woff2'),
+         url('fonts/bank_gothic_medium.woff') format('woff'),
+         url('fonts/bank_gothic_medium.ttf') format('truetype'),
+         url('fonts/bank_gothic_medium.svg#bank_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@mixin bank() {
+    font-family: 'bank_gothicregular';
+    
+}
