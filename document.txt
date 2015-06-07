@@ -1,0 +1,7 @@
+28-May-2015  -with updates 4 pages done 
+    1) index.html
+    2) about.html
+    3) product.html 
+    4) whats-new.html
+29-May-2015
+    5) services-executive

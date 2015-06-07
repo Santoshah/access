@@ -4,9 +4,16 @@
 
  // @import "animate.sass";
 
-@import "spr/*.png";
-
 $spr-layout: smart;
+@import "spr/*.png";
+$revive-layout: smart;
+@import "revive/*.png";
+$revived-layout: smart;
+@import "revived/*.png";
+$imatrix-layout: smart;
+@import "imatrix/*.png";
+
+
 
 @mixin wh() {
     width:100%; 
