@@ -162,7 +162,7 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 	}
 }
 .footer_text { color: #0087cb; padding: 10px 0; } 
-.footer {  padding: 100px 0 50px; }
+.footer {  padding: 80px 0 50px; }
 
 .text_gradient {
 	&:after {content: attr(data-text); z-index: 2; color: green; position: absolute; left: 0;
@@ -200,18 +200,18 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 .seal { padding: 20px 0;}
 .navbar-collapse { padding: 0;}
 .product_bg { background: #e7e7e7 url(../img/product-bg.jpg) no-repeat center bottom; min-height: 300px; }
-.top_white_gradient { background: url(../img/pay-gradient.jpg) repeat-x center top; 
-	p { color: $gray; }
+.top_white_gradient { background: url(../img/pay-gradient.jpg) repeat-x center top; padding-bottom: 11px;
+	p {  color: #3c3c3c;}
 	.blue_title { font-size: 50px; text-align: center;  }
 	.orange_title { color: $orange; padding: 0;    font-weight: normal; @include text-shadow(none);  }
 }
 .product_item { color: #eba820;  
-	p { color: #686868; font-size: 11px;}
+	p { line-height: 16px ; font-size: 14px;}
 }
 .ptitle { font-size: 16px; font-weight: bold; margin: 12px 0 3px;  }
 .gold_standard {   padding-top: 30px; }
 .plist_img {   padding-top: 2%; }
-.sub_foo { padding-top: 60px; background: none;
+.sub_foo { padding-top: 30px; background: none;
 	.orange_title { padding: 0;   }
 	.social_icons li {display: inline-block; float: none; }
 
@@ -765,6 +765,7 @@ $bd1 : 30px;
 .red { color: #cb0b0b; }
 .fz20 {font-size: 20px !important; }
 .fz22 {font-size: 22px; }
+.fz24 {font-size: 24px; }
 .italic { font-style: italic; }
 .cardio_pro {
 	.title { font-size: 14px; color: #6b6b6b; }
@@ -813,6 +814,6 @@ $bd1 : 30px;
 .form_graphic { background: url(../img/sub-form-bg.jpg) no-repeat center top, url(../img/sub-form.jpg) repeat-x left top; }
 .lig_blue { color: #1c86c8; font-size: 19px; padding-bottom: 30px; }
 .new_dk_purple { color: #1f2357; font-size: 36px; @include text-shadow(1px 1px 0 #fff, 2px 2px 0 rgba(0,0,0,0.2)); }
-
+.iminterested { @include spr-sprite("iminterested", true); display: inline-block;   margin: 20px 0 15px }
 @import "responsive";
 
