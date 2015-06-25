@@ -7,6 +7,7 @@ $blue-dark: #002a75;
 $green: #31bb01;
 $orange : #eba820;
 $purple: #80246f;
+$lg-orange: #eaa518;
 @media screen and (min-width: 960px) {
 	.container { width: 960px; }
 }
@@ -53,16 +54,22 @@ body { font-family: 'century gothic'; }
 	li { background-color: #fff; margin: 0; height: 11px; width: 11px; @include box-shadow(2px 2px 3px rgba(0,0,0,0.5)); border: 0; }
 	.active {  background-color: $orange;  height: 11px; width: 11px;  }
 }
-.carousel-caption { text-align: left; 
+.carousel-caption { text-align: left; bottom: 0;
 	img { float: left; }
 
 }
 
 @media screen and (min-width: 768px) {
-	.carousel-caption {left: 16.5%; right: 20%; }
+	.carousel-caption { //left: 16.5%;
+	 right: 20%; }
 }
 
-.welcome_message {  float: left; font-size: 24px; color: #0075b6; text-shadow: none; text-transform: uppercase;   padding-top: 83px }
+.welcome_message {  float: left; font-size: 24px; color: #0075b6; text-shadow: none; text-transform: uppercase;   padding-top: 75px;	
+	.orange { color: $lg_orange; font-weight: bold; text-transform: none;
+			sup { font-size: 9px;   top: -14px; font-weight: normal;}
+	}
+
+}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a { 
 	@include border-radius(5px 5px 0 0);
 	&:after {
@@ -72,7 +79,7 @@ body { font-family: 'century gothic'; }
 			height: 0; 
 			border-left: 7px solid transparent;
 			border-right: 7px solid transparent;
-			border-top: 7px solid #eaa518;
+			border-top: 7px solid $lg-orange;
 		    display: block;
 		    margin: 5px auto 0;
 
@@ -131,8 +138,8 @@ background-color: #2a2e6e; // Old browsers
 }
 .block { display: block; }
 .new_one {  margin-top: -30px;}
-a.see_full { font-size: 12px; color: $blue; margin-left: 10px; font-weight: normal; line-height: 0; position: relative; top: -2px;
-			&:after { left: 5px; content: ""; width: 0; height: 0; border-bottom: 7px solid transparent; border-top: 7px solid transparent; display: inline-block; border-left: 7px solid #eaa518;   position: relative; top: 3px; }
+a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0; position: relative; top: -2px;
+			&:after { left: 5px; content: ""; width: 0; height: 0; border-bottom: 7px solid transparent; border-top: 7px solid transparent; display: inline-block; border-left: 7px solid $lg-orange;   position: relative; top: 3px; }
 		}
 .new_product {
 	h4 { font-size: 24px; color: $blue-dark; font-weight: bold;}
@@ -404,7 +411,7 @@ ul.flag_items {  padding-top: 4px; margin-bottom: 1px; width: 100%; 	float: left
 .sub_title_big, .title_big { color: #002a73; @include text-shadow(1px 1px 0 #fff, 2px 2px 2px rgba(0,0,0,0.2)); font-size: 36px;   margin-bottom: 4px; font-weight: normal; font-style: italic; }
 .sub_title_big { font-size: 30px; font-weight: bold; margin-top: 35px; margin-bottom: 12px;}
 .login_page { margin-bottom: 0;
-	.orange_light { color: #eaa518; padding-bottom: 20px; font-size: 24px;  }
+	.orange_light { color: $lg-orange; padding-bottom: 20px; font-size: 24px;  }
 	.button_medium1 { font-size: 16px;}
 }
 .modrn { background: none; margin-top: 0;
@@ -720,7 +727,7 @@ $bd1 : 30px;
 	.title_big { float: left; @include text-shadow(none); background:none; font-style: normal;   font-size: 28px;
 		sup {  top: -16px; font-size: 14px;}
 	}
-	.orange { color: #eaa518; float: left; }
+	.orange { color: $lg-orange; float: left; }
 	img {   float: left; margin-top: -50px; position: relative; margin-left: 15px;}
 
 }
