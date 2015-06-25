@@ -4,6 +4,24 @@
 
 
 @media screen and (max-width: 767px) {
+	.half_list { width: 100%; }
+
+	.imatrix_body .col-md-4,
+	.imatrix_panel_wrap { width: 100%; }
+	.imatrix_body .col-md-4 { margin: 0; }
+	.imatrix_body .col-md-4:last-child, .imatrix_body .col-md-4:first-child { margin: 0; }
+	.imatrix_body  {
+		.mb_imat_head { background: #061443; margin: 20px 0 0;  font-size: 18px;    padding: 10px 0; @include border-radius(10px 10px 0 0);
+			br { display: none; }
+		}
+	}
+	.imatrix_body .imat_box { @include border-radius(0 0 10px 10px); }
+	.green_bg {
+		+ .imatrix_body .mb_imat_head { background:#008053;}	
+	}
+	.cus_style { margin-top: 20px !important; }
+	.mb_imat_head { display: block;}
+	.imatrix_head { display: none; }
 	.product_title { font-size: 26px; 
 		.normal {	  font-size: 21px; }
 	}
@@ -15,6 +33,7 @@
 	.social_icons { text-align: center;
 		li { float: none; display: inline-block; }
 	}
+	.imatrix_details .title_menu {  padding-top: 91px; padding-bottom: 36px;}
 	.pad1 {padding: 20px; }
 	.footer {padding: 10px 0 50px; }
 	.company_slogans { border-right: 0; }
@@ -26,10 +45,12 @@
 	.sub_foo {
 			.orange_title sup {top: -0.5em; font-size: 11px; left: -3px; }
 	}
+	.small_purple_foo { font-size: 24px; }
 	.top_white_gradient {
 		.blue_title { font-size: 36px;}
 		.orange_title {   font-size: 26px; }
 	}
+	.imatrix_foo_det .orange_title { font-size: 30px; }
 	.mid_content {
 		p { font-size: 14px; }
 	}
@@ -100,4 +121,20 @@
 	.product_list_items {  padding: 0 20px}
 	p.medium_gray_text { font-size: 16px; }
 	.blue_shadow_text { font-size: 20px; 	}
+	.log_out_wrap {   font-size: 18px; text-align: center; 
+		.title_big { font-size: 16px; float: none; }
+		img, a, .orange { float: none; margin: 0}
+		img {  display: block; margin: 10px auto;}
+	}
+
+	.log_out_wrap .title_big sup {top: -9px; font-size: 8px; }
+	.small_graphic { text-align: center;  padding: 20px 0;
+		.orange_title { font-size: 25px; 
+				sup {top: -0.9em; font-size: 12px; left: -9px;}
+		}
+	}
+
+
+	.dk_purple {font-size: 22px; line-height: 26px; }
+	.nor_blue { font-size: 18px; }
 }
