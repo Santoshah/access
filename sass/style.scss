@@ -2,7 +2,7 @@
 @import "partials/bootstrap";
 @import "partials/grid";
 $blue: #0085c9;
-$gray: #6b6b6b;
+$gray: #3c3c3c; //#6b6b6b;
 $blue-dark: #002a75; 
 $green: #31bb01;
 $orange : #eba820;
@@ -162,7 +162,7 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 	}
 }
 .footer_text { color: #0087cb; padding: 10px 0; } 
-.footer {  padding: 80px 0 50px; }
+.footer {  padding: 08px 0 50px; }
 
 .text_gradient {
 	&:after {content: attr(data-text); z-index: 2; color: green; position: absolute; left: 0;
@@ -226,18 +226,19 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 	&:before {background-image: url(../img/single-product.png);   width: 299px; top: 4px; float: left; }
  }
 
-.gradient_top1 { background: url(../img/gradient-top1.jpg) repeat-x left top; min-height: 300px; }
+.gradient_top1 { background: url(../img/gradient-top1.jpg) repeat-x left bottom; min-height: 300px; }
 .gradient_top3 { background: url(../img/up-banner-bg.jpg) repeat-x left top; min-height: 300px; }
-.up_banner { background:transparent url(../img/up-banner.jpg) center top no-repeat; padding: 90px 0 51px; 
-	p {  font-size: 13px; color: $gray; }
+.up_banner { background:transparent url(../img/up-banner.jpg) center bottom no-repeat; padding: 90px 0 51px; 
+	p {  font-size: 15px; color: $gray; }
 }
+.pdu1 { padding: 40px 0 40px; }
 .up_banner1 { background:transparent url(../img/up-banner-bg1.jpg) center top no-repeat; padding: 90px 0 51px;  }
 
 .img_shadow { @include box-shadow(3px 3px 3px rgba(0,0,0,0.2)); }
 .toxi_img {  margin-top: -15px; margin-bottom: 10px;}
 .buttons {  margin-top: 17px; border: 0; background: url(../img/button.png) no-repeat center top; width: 85px; height: 34px; float: left; font-size: 10px; color: #4e4e4e; padding: 8px 0; text-align: center; text-shadow: 1px 1px 0 rgba(255,255,255,0.2); font-style: italic;}
-.the_metabolite_advantage {   margin-top: 10px; margin-left: 13%; } 
-.green_title { text-transform: uppercase; color: #0b897e !important; font-size: 24px; font-weight: bold; }
+.the_metabolite_advantage {   margin-top: 10px; margin-left: 4%; } 
+.green_title { text-transform: uppercase; color: #0b897e !important; font-size: 24px; font-weight: bold; padding-top: 10px;  }
 .sub_base_text {font-size: 16px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; color: $gray; }
 .medecine {   background-position: center -92px;   padding-top: 10px;
 	p { font-size: 16px; padding-bottom: 10px; margin-bottom: 0; color: $gray; }
@@ -254,7 +255,7 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 .cus_toxi {  padding: 0; margin-top: 48px;}
 .list_item_text {
 	li { color: $gray; line-height: 20px; 
-	    &.red_text { color: #f80000; }
+	    &.red_text { color: #f80000; font-size: 11px;  }
 	    &.red_alpha { position: relative;  color: #f80000;
 	      &:before { content: ""; float: left; background: transparent url(../img/alpha.png) left top no-repeat; width: 27px; height: 25px; position: absolute; top: -10px; left: -29px;  }
 	    }  
@@ -265,7 +266,7 @@ a.see_full { font-size: 12px; color: $blue;  font-weight: normal; line-height: 0
 .bbshadow {  background: url(../img/top-shadow1.jpg) no-repeat center top;  padding-top: 10px;  }
 .product_shadow { background: url(../img/about-graphic.png) no-repeat center -90px;  }
 .big_list_items {
-	li { font-size: 11px; color: $gray; line-height: 14px; padding-bottom: 10px;  list-style: disc; margin-left: 20px;
+	li { font-size: 16px; color: $gray; line-height: 20px; padding-bottom: 10px;  list-style: disc; margin-left: 20px;
       &.red_text_with_shadow { font-weight: normal; font-style: italic;   font-size: 18px; color: #e70101; list-style: none; 
           .free_big {   font-size: 24px; line-height: 25px; font-weight: bold;  }
       }
@@ -815,5 +816,7 @@ $bd1 : 30px;
 .lig_blue { color: #1c86c8; font-size: 19px; padding-bottom: 30px; }
 .new_dk_purple { color: #1f2357; font-size: 36px; @include text-shadow(1px 1px 0 #fff, 2px 2px 0 rgba(0,0,0,0.2)); }
 .iminterested { @include spr-sprite("iminterested", true); display: inline-block;   margin: 20px 0 15px }
+.green-iminterested  { @include spr-sprite("green-iminterested", true); display: inline-block;   margin: 20px 0 15px }
+
 @import "responsive";
 
