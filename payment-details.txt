@@ -1,0 +1,12 @@
+1 home page =  2000
+20 page     = 20000
+2 form page =  1600
+3 pg updat  =  1000
+2 static    =   500
+New update  =   400   (cardio page major update with all new buttons added) (3-July-2015)
+2 new page  =  2000   (3-July-2015) contact.html and location.html
+---------------------------
+Total       = 27500/-
+paid        = 10000
+------------------------
+            = 17500
