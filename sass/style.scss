@@ -25,6 +25,7 @@ $lg-orange: #eaa518;
 		}
 	}
 }
+
 @media screen and (min-width: 960px) {
 	.pr5 { padding-right: 5px; }
 	.pl0 {  padding-left: 0; }
@@ -937,7 +938,7 @@ $bd1 : 30px;
 	
 }
 .hundred { @include spr-sprite('100', true); position: absolute; top: 20px; right: 20px; float: left;}
-
+// .label_skitter { display: none !important; }
 
 @import "responsive";
 
