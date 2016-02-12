@@ -60,7 +60,7 @@ function removefirstdot(){
     navigation:       true,
 
     // Label display
-    label:          true,
+    label:          false,
 
     // Easing default
     easing_default:     '',
