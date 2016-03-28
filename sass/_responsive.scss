@@ -3,11 +3,21 @@
 .carousel-caption {right: 0; left: 0; margin: 0 auto; width: 813px; }
 
 }
+@media screen and (min-width: 1199px) {
+	.extra_big_container {
+		.container { width: 906px; }
+		.client_info_wrap { padding: 37px 0; }
+	}
+}
 
 @media screen and (max-width: 972px) {
 	.home_graphics .container { width: 100%; }
 }
 @media screen and (max-width: 767px) {
+	.light_blue {
+		.wight { width: 100%; }
+		.shadow_for_light_blue_background { width: 100%; }
+	}
 	.hundred { position: static; float: none; display: block; margin: 0 auto;  }
 	.home_sub_title_big {    margin: 14px 0;}
 	.home_graphics {
