@@ -14,6 +14,26 @@
 	.home_graphics .container { width: 100%; }
 }
 @media screen and (max-width: 767px) {
+
+.order_save {
+    background: #efefef;
+    width: 100%;
+    border-radius: 10px;
+}
+.save {font-size: 22px; }
+.discound_cross {font-size: 35px; }
+.dollar { font-size: 25px; }
+.cent_value { font-size: 20px; }
+.top_alpha_text { font-size: 20px;     line-height: 28px; }
+.fz45 {
+    font-size: 30px;
+} 
+.fz24 {
+    font-size: 13px;
+}
+.fit_spr { margin: 0 auto; }
+.diet_plan_receipe { text-align: center; }
+
 	.light_blue {
 		.wight { width: 100%; }
 		.shadow_for_light_blue_background { width: 100%; }

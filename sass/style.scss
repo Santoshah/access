@@ -10,6 +10,12 @@ $orange : #eba820;
 $purple: #80246f;
 $lg-orange: #eaa518;
 $light_blue: #e0f3e9; 
+$light_green: #309761;
+$red: #cc0000;
+$blue_h: #034aba;
+$green_h: #009556; 
+$orange_h: #da8401; 
+
 @media screen and (min-width: 864px) {
 	.container { width: 864px; }
 }
@@ -581,6 +587,7 @@ ul.flag_items {  padding-top: 4px; margin-bottom: 1px; width: 100%; 	float: left
 .green_color { color: #9db05c; }
 .mh1 {  min-height: 278px; }
 .pb1 { padding-bottom: 30px; }
+
 .slgn_t { color: #785c8a; font-size: 24px; }
 .gray_tt { color: $gray; font-size: 40px;    position: relative; top: 11px;}
 .all_panel { color: #785c8a; font-size: 22px; }
@@ -813,14 +820,7 @@ $bd1 : 30px;
 .dkkk_purple { color: #002a6d; font-size: 24px;
 	.normal { font-size: 19px; }
  }
-.drk_p { color: #02146d; }
-.red { color: #cb0b0b; }
-.fz20 {font-size: 20px !important; }
-.fz22 {font-size: 22px; }
-.fz24 {font-size: 24px; }
-.fz35 {font-size: 35px; }
-.fz18 { font-size: 18px; }
-.italic { font-style: italic; }
+
 .cardio_pro {
 	.title { font-size: 14px; color: #6b6b6b; }
 	p { font-size: 13px; line-height: 19px; color: #6b6b6b;  }
@@ -983,12 +983,79 @@ $bd1 : 30px;
 .circle_fit { padding: 64px 0 0;
 	p { padding-bottom: 0;   font-size: 15px; text-align: center; color: #000; padding-top: 44px; } 
 }
-.big_dark_blue { color: #032a91; font-size: 36px;  }
+.big_dark_blue {     padding-bottom: 31px; color: #032a91; font-size: 36px;  }
 .seal_mark {
 	.orange_title {font-size: 30px; padding-top: 21px; }
 	p { font-size: 13px; color: #309ad1; margin-bottom: 4px; }
 }
+.shadow_below { background: url(../img/shadow-below.jpg) no-repeat center bottom; }
+.light_green { color: $light_green; }
+.drk_p { color: #02146d; }
+.red { color: #cb0b0b; }
+.fz20 {font-size: 20px !important; }
+.fz22 {font-size: 22px; }
+.fz24 {font-size: 24px; }
+.fz35 {font-size: 35px; }
+.fz18 { font-size: 18px; }
+.fz32 { font-size: 32px; }
+.italic { font-style: italic; }
+
+@each $fit in apple, broc, cake, coffee, fish, lift-up, measure {
+	.#{$fit} {
+		@include fit-sprite($fit);
+	}
+}
+
+.fit_spr { margin-top: -10px; top: -5px; position: relative; width: 108px; height: 108px; }
+.fish {     top: 0 !important; }
+.diet_title { font-size: 15px; color: #309761; font-weight: bold;    margin: 0 0 2px;  }
+.list_small {
+	li { font-size: 13px; list-style-type: disc; line-height: 16px; color: #000; 
+		
+	}
+}
+.diet_fruits { background:transparent url(../img/access-fit/pattern.png) right top no-repeat;}
+.sub_list_small {
+	li { font-size: 9px; list-style: none; line-height: 11px;
+		&:before { content: "- "; }
+	}
+}
+.lspi { list-style-position: inside; }
+.fruit_wrap {
+	p {       padding-right: 10px;   padding-bottom: 0; text-align: left;  color: #000; font-size: 15px; line-height: 23px; }
+	h4 { text-transform: uppercase; font-size: 20px; font-weight: bold;  }
+}
+.blue_h { color: $blue_h; }
+.red { color: $red; }
+.green_h { color: $green_h; }
+.orange_h { color: $orange_h; }
+.pb5 { padding-bottom: 5px;}
+.diet_plan_receipe {     padding-bottom: 6px; background: url(../img/access-fit/shadow.png) no-repeat center bottom; }
+.discound_cross { position: relative; }
+.cross_for_discount {
+	@include fit-sprite("cross", true);
+	position: absolute;
+    top: -5px;
+    left: 8px;
+}
+.order_save { background: url(../img/access-fit/boundry.jpg) no-repeat center top; width: 645px; min-height: 247px; margin: 0 auto; }
+.new_bule { color: #011b81; }
+.blk { color: #000; }
+.save {    padding-top: 27px;  font-size: 33px; color: #000; font-weight: bold; }
+.discount {
+
+}
+.discound_cross {font-size: 53px; font-weight: bold; color: #000;  }
+.cent_value {     top: -18px;    font-size: 26px; font-style: italic; font-weight: bold; }
+.dollar { font-size: 33px; color: #000; }
+.blue_medium_text {
+	.dollar, .discound_cross { @extend .new_bule; }
+}
+.order {    margin-bottom: -23px; margin-top: 7px; background: url('../img/fit/order.png') no-repeat left top; width: 131px; height: 48px; display: inline-block;}
+.top_alpha_text  { margin-bottom: 14px;     padding-bottom: 19px; background: url(../img/access-fit/shadow.png) no-repeat center bottom; font-size: 33px; font-style: italic; color: #000; line-height: 40px; }
+.fz45 { font-size: 45px; }
 @import "responsive";
+
 
 
 
