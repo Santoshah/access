@@ -30,6 +30,7 @@ $light_blue: #e0f3e9;
 	.pr5 { padding-right: 5px; }
 	.pl0 {  padding-left: 0; }
 	.pl5 { padding-left: 5px; }
+	.container { width: 960px; }
 }
 .header { position: relative; padding-top: 33px; }
 img { max-width: 100%; height: auto; }
@@ -818,6 +819,7 @@ $bd1 : 30px;
 .fz22 {font-size: 22px; }
 .fz24 {font-size: 24px; }
 .fz35 {font-size: 35px; }
+.fz18 { font-size: 18px; }
 .italic { font-style: italic; }
 .cardio_pro {
 	.title { font-size: 14px; color: #6b6b6b; }
@@ -971,6 +973,21 @@ $bd1 : 30px;
 .free_shipping { padding-bottom: 5px; margin-bottom: 5px;   color: #f00; font-weight: bold; border-bottom: 1px solid #efefef; }
 .order_total { font-weight: bold; }
 .pt60 { padding-top: 60px; }
+.up_banner2 { padding: 57px 0 84px; }
+.image_margin_negative {    margin-bottom: -108px; }
+.key_to_success_spacing { padding: 57px 0 51px;}
+.green_tick_spr {     position: relative; top: 4px;    display: inline-block; @include spr-sprite("green-tick", true);  }
+.big_purple {    color: #01208d; font-size: 33px; font-weight: bold; letter-spacing: 3px; }
+.black {    font-size: 20px; color: #000; }
+.normal_green_list li { line-height: 42px; }
+.circle_fit { padding: 64px 0 0;
+	p { padding-bottom: 0;   font-size: 15px; text-align: center; color: #000; padding-top: 44px; } 
+}
+.big_dark_blue { color: #032a91; font-size: 36px;  }
+.seal_mark {
+	.orange_title {font-size: 30px; padding-top: 21px; }
+	p { font-size: 13px; color: #309ad1; margin-bottom: 4px; }
+}
 @import "responsive";
 
 
